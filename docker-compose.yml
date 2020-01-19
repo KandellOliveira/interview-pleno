@@ -11,7 +11,7 @@ services:
     ports:
       - 5432:5432
     environment:
-      - POSTGRES_PASSWORD=admin
+      - POSTGRES_PASSWORD=brainweb
       - POSTGRES_USER=brainweb
       - POSTGRES_DB=brainweb
     restart: unless-stopped
