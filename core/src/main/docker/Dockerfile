@@ -1,5 +1,5 @@
 FROM openjdk:11-jre-slim-sid
-
+VOLUME /tmp
 LABEL maintainer="Brainweb"
 LABEL version="1.0"
 
@@ -8,6 +8,8 @@ ENV DB_HOSTNAME="localhost"
 ENV DB_PORT="5432"
 ENV DB_USERNAME="brainweb"
 ENV DB_PWD="brainweb"
+
+ADD target/interview-pleno-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8080
 
